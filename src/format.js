@@ -14,6 +14,7 @@ function numberSplitWithComma(n) {
     const end = n.slice(r).match(/\d{3}/g).join(',')
     return r > 0 ? start + ',' + end : end
 }
+// 格式化日期为 年-月-日
 function formatDate (d) {
     const time = new Date(d)
     let y = time.getFullYear(); // 年份
