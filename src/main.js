@@ -1,5 +1,6 @@
 import format from './format.js';
 import validate from './validate';
+import { version } from '..'
 export default function () {
     console.log(validate.isMobile('13888889999'));
     console.log(validate.isEmail('36292222@qq.com'));

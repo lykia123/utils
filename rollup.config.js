@@ -1,3 +1,4 @@
+import resolve from 'rollup-plugin-node-resolve'
 export default {
     input: 'src/main.js',
     output: [
@@ -23,5 +24,6 @@ export default {
             format: 'iife',
             name: 'myIife'
         }
-    ]
+    ],
+    plugins: [ resolve() ]
 }
