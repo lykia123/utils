@@ -20,6 +20,7 @@
         const end = n.slice(r).match(/\d{3}/g).join(',');
         return r > 0 ? start + ',' + end : end
     }
+    // 格式化日期为 年-月-日
     function formatDate (d) {
         const time = new Date(d);
         let y = time.getFullYear(); // 年份
@@ -57,6 +58,9 @@
     function isDate(n) {
         return (typeof n === 'object') && n.constructor == Date
     }
+    function isCardId(n) {
+        return (/(^\d{15}$)|(^\d{17}(\d|X|x)$)/.test(n))
+    }
     var validate = {
         isMobile,
         isEmail,
@@ -65,16 +69,21 @@
         isString,
         isObj,
         isArr,
-        isDate
+        isDate,
+        isCardId
     };
 
     function main () {
-        console.log(validate.isMobile('13888889999'));
-        console.log(validate.isEmail('36292222@qq.com'));
-        console.log(format.numberSplitWithComma(123123213123));
-        const newDate = new Date();
-        console.log(format.formatDate(newDate.setTime(newDate.getTime() - 3600 * 1000 * 24 * 8)));
-        console.log(format.formatDate(newDate.setTime(newDate.getTime() - 3600 * 1000 * 24 * 1)));
+        return {
+            format,
+            validate
+        }
+        // console.log(validate.isMobile('13888889999'));
+        // console.log(validate.isEmail('36292222@qq.com'));
+        // console.log(format.numberSplitWithComma(123123213123));
+        // const newDate = new Date();
+        // console.log(format.formatDate(newDate.setTime(newDate.getTime() - 3600 * 1000 * 24 * 8)));
+        // console.log(format.formatDate(newDate.setTime(newDate.getTime() - 3600 * 1000 * 24 * 1)))
     }
 
     return main;
