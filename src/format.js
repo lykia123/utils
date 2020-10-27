@@ -14,7 +14,7 @@ function numberSplitWithComma(n) {
     const end = n.slice(r).match(/\d{3}/g).join(',')
     return r > 0 ? start + ',' + end : end
 }
-// 格式化日期为 年-月-日
+// 格式化日期为 年-月-日 传入的参数为类似new Date()
 function formatDate (d) {
     const time = new Date(d)
     let y = time.getFullYear(); // 年份
@@ -22,7 +22,47 @@ function formatDate (d) {
     let r = time.getDate().toString().padStart(2,'0'); // 日子
     return `${y}-${m}-${r}`
 }
+// 将接口返回的数组格式化成下拉框、多个单选框option的label和value格式
+function changeToOptions (data, name, id) {
+    const a = []
+    data.forEach(item => {
+        a.push({label: item[name], value: item[id]})
+    })
+    return a
+}
+// 深度拷贝
+function deepClone (arg) {
+    if (arg instanceof RegExp) return new RegExp(arg)
+    if (arg instanceof Date) return new Date(arg)
+    if (typeof arg !== 'object' || arg === null) {
+        return arg
+    }
+    var result = arg instanceof Array ? [] : {}
+    for (const key in arg) {
+        if (arg.hasOwnProperty(key)) {
+            if (typeof arg[key] === 'object') {
+                result[key] = deepClone(arg[key]) //递归复制
+            } else {
+                result[key] = arg[key]
+            }
+        }
+    }
+    return result
+}
+//数组去重
+function uniq(arr) {
+    const result = []
+    for (let i = 0; i < arr.length; i++) {
+        if (!result.includes(arr[i])) {
+            result.push(arr[i])
+        }
+    }
+    return result
+}
 export default {
     numberSplitWithComma,
-    formatDate
+    formatDate,
+    changeToOptions,
+    deepClone,
+    uniq
 }
