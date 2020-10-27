@@ -1,5 +1,10 @@
 utils
 基于javascript,用rollup进行打包成不同格式的
+## 打包流程
+1、在src里面定义一些js方法，format用于加入一些格式化的方法，validate用于加入一些校验的方法，如果有其他的类型的js也可以重新建一个js文件夹，在main.js里面引入就可以
+2、改完提交的代码之后，用rollup -c进行打包
+3、打包成功之后，再将代码Push到远程
+4、通过npm publish --registry http://172.20.155.102:4873进行发包到私服，具体请参考http://wiki.skyoss.com/pages/viewpage.action?pageId=35726422
 
 ## 安装
 
