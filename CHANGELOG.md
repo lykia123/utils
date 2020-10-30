@@ -1,3 +1,19 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [0.0.6](http://gitlab.skysri.com/FrontEnd/utils/compare/v0.0.5...v0.0.6) (2020-10-30)
+
+
+### Features
+
+* **browserslist:** 新增 browserslist 配置 ([779acf3](http://gitlab.skysri.com/FrontEnd/utils/commit/779acf32256e48533f1e50903563c4a6ce248e5a))
+
+
+### Bug Fixes
+
+* **release:** 解决发布时包含了不必要的文件 ([f915f75](http://gitlab.skysri.com/FrontEnd/utils/commit/f915f75c421970f088e51bab1a8e1caa2e35fbcd))
+
 ## <small>0.0.5 (2020-10-30)</small>
 
 * chore(release): 0.0.5 ([d9ed7e5](http://gitlab.skysri.com/FrontEnd/utils/commit/d9ed7e5))
@@ -18,6 +34,3 @@
 * 文档完善 ([c2f87eb](http://gitlab.skysri.com/FrontEnd/utils/commit/c2f87eb))
 * 注释说明 ([9cde51b](http://gitlab.skysri.com/FrontEnd/utils/commit/9cde51b))
 * 添加深度克隆、网址校验、数组去重、数组转换成option格式、tv键盘响应方法 ([f48b11b](http://gitlab.skysri.com/FrontEnd/utils/commit/f48b11b))
-
-
-
