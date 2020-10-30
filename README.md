@@ -1,19 +1,21 @@
-utils
-基于javascript,用rollup进行打包成不同格式的
-## 打包流程
-1、在src里面定义一些js方法，format用于加入一些格式化的方法，validate用于加入一些校验的方法，如果有其他的类型的js也可以重新建一个js文件夹，在src/main.js里面引入就可以
+# @ccprivate/utils
+基于javascript,用rollup进行打包成不同格式的公共方法库
+## 开发说明
+1、__开发__：在`src`里面定义一些js方法，`format`用于加入一些格式化的方法，`validate`用于加入一些校验的方法，如果有其他的类型的js也可以重新建一个js文件夹，在`src/main.js`里面引入就可以
 
-2、改完提交的代码之后，运行 `npm run build` 进行打包
+2、__测试__：改完提交的代码之后，运行 `npm run test` 重新进行测试，若测试不通过请修改对应的代码或测试用例，若有新增加的功能记得在`test`目录中添加对应的测试用例再运行测试, __<span style="color:red">注意：测试不通过的话是无法正常提交代码的</span>__
 
-3、打包成功之后，再将代码Push到远程
+3、__提交代码__：测试通过后运行`npm run commit`根据提示提交代码，或者也可以手动 git commit -m 'messgae',但是'message'必须符合[commitizen规范](http://wiki.skyoss.com/pages/viewpage.action?pageId=36724620),建议直接运行`npm run commit`，因为 __步骤5__ 会根据提交的信息变更 __版本号__
 
-4、运行 `npm run release` 会自动更改changelog、并根据git提交信息自动变更`package.json`中的`version`，并根据变更后的 `version` 生成对应的 `tag`，之后根据控制台的提示将tag推到gitlab,并发布到Verdaccio私服
+4、__构建__：`npm run build`
+
+5、__发布__：运行 `npm run release`, 后会自动更改 changelog 、并根据git提交信息自动变更 `package.json` 中的 `version` ，并根据变更后的 `version` 生成对应的 `tag`，之后根据控制台的提示将tag推到gitlab,并发布到Verdaccio私服
 ## package.json 命令说明
 ### 构建
 ```bash
 npm run build
 ```
-### 构建
+### 格式化
 ```bash
 npm run lint
 ```

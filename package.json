@@ -30,7 +30,7 @@
     }
   },
   "lint-staged": {
-    "*.js": "eslint --fix"
+    "*.js": ["eslint --fix","npm run test -- --bail --findRelatedTests"]
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
