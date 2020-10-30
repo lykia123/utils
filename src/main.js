@@ -1,10 +1,8 @@
 import format from './format';
 import validate from './validate';
 import coocaaKeyMap from './coocaaKeyMap'
-export default function () {
-    return {
-        format,
-        validate,
-        coocaaKeyMap
-    }
+export default {
+    format,
+    validate,
+    coocaaKeyMap
 }
