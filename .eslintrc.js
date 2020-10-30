@@ -10,5 +10,6 @@ module.exports = {
     // 指定代码的运行环境
     browser: true,
     node: true,
+    jest: true
   },
 };

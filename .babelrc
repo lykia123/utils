@@ -28,7 +28,8 @@
   "env": {
     "test": {
       "presets": [
-        "@babel/env"
+        "@babel/env",
+        "power-assert"
       ]
     }
   }
