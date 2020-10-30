@@ -1,5 +1,23 @@
-# Changelog
+## <small>0.0.5 (2020-10-30)</small>
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+* chore(release): 0.0.5 ([d9ed7e5](http://gitlab.skysri.com/FrontEnd/utils/commit/d9ed7e5))
+* refactor(babel): 新增babel配置 ([ea624ae](http://gitlab.skysri.com/FrontEnd/utils/commit/ea624ae))
+* refactor(eslint): 添加eslint校验，同时根据eslint更改部分错误代码 ([270e65b](http://gitlab.skysri.com/FrontEnd/utils/commit/270e65b))
+* refactor(rollup): 更改build时文件的输出目录 ([1f13769](http://gitlab.skysri.com/FrontEnd/utils/commit/1f13769))
+* refactor(test): 添加测试 ([e6f7d07](http://gitlab.skysri.com/FrontEnd/utils/commit/e6f7d07))
+* build(commit): 规范化git提交信息 ([3efc2af](http://gitlab.skysri.com/FrontEnd/utils/commit/3efc2af))
+* 0.0.4发布 ([124aa70](http://gitlab.skysri.com/FrontEnd/utils/commit/124aa70))
+* amd,cjs模块使用文档输出 ([e594086](http://gitlab.skysri.com/FrontEnd/utils/commit/e594086))
+* first-commit ([a3901d1](http://gitlab.skysri.com/FrontEnd/utils/commit/a3901d1))
+* json文件版本配置修改 ([8934ad0](http://gitlab.skysri.com/FrontEnd/utils/commit/8934ad0))
+* readme举例修改 ([394d333](http://gitlab.skysri.com/FrontEnd/utils/commit/394d333))
+* rollup打包 ([28f6831](http://gitlab.skysri.com/FrontEnd/utils/commit/28f6831))
+* version change ([f89f160](http://gitlab.skysri.com/FrontEnd/utils/commit/f89f160))
+* 修改Main文件 ([5f909ed](http://gitlab.skysri.com/FrontEnd/utils/commit/5f909ed))
+* 打包发布到私服，配置json文件 ([19cc9bf](http://gitlab.skysri.com/FrontEnd/utils/commit/19cc9bf))
+* 文档完善 ([c2f87eb](http://gitlab.skysri.com/FrontEnd/utils/commit/c2f87eb))
+* 注释说明 ([9cde51b](http://gitlab.skysri.com/FrontEnd/utils/commit/9cde51b))
+* 添加深度克隆、网址校验、数组去重、数组转换成option格式、tv键盘响应方法 ([f48b11b](http://gitlab.skysri.com/FrontEnd/utils/commit/f48b11b))
 
-### 0.0.5 (2020-10-30)
+
+
