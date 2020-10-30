@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](http://gitlab.skysri.com/FrontEnd/utils/compare/v0.0.6...v0.0.7) (2020-10-30)
+
+
+### Features
+
+* **doc:** 更新readme.md说明文档 ([36c14f0](http://gitlab.skysri.com/FrontEnd/utils/commit/36c14f0d0e346e2aaafb4efc433c6898bb35b5f4))
+
 ### [0.0.6](http://gitlab.skysri.com/FrontEnd/utils/compare/v0.0.5...v0.0.6) (2020-10-30)
 
 
