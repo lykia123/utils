@@ -1,6 +1,6 @@
 {
   "name": "@ccprivate/utils",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "main": "dist/ccUtil.cjs.js",
   "module": "dist/ccUtil.es.js",
   "browser": "dist/ccUtil.umd.js",
@@ -30,7 +30,10 @@
     }
   },
   "lint-staged": {
-    "*.js": ["eslint --fix","npm run test -- --bail --findRelatedTests"]
+    "*.js": [
+      "eslint --fix",
+      "npm run test -- --bail --findRelatedTests"
+    ]
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",

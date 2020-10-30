@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.8](http://gitlab.skysri.com/FrontEnd/utils/compare/v0.0.7...v0.0.8) (2020-10-30)
+
+
+### Bug Fixes
+
+* **build:** 删除旧打包方式生成的文件 ([4809864](http://gitlab.skysri.com/FrontEnd/utils/commit/48098648203c9d5a2f9687bebf8de8951553c665))
+
 ### [0.0.7](http://gitlab.skysri.com/FrontEnd/utils/compare/v0.0.6...v0.0.7) (2020-10-30)
 
 
