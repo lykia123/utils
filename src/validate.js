@@ -27,7 +27,7 @@ function isCardId(n) {
     return (/(^\d{15}$)|(^\d{17}(\d|X|x)$)/.test(n))
 }
 function isUrl(n) {
-    return /^((https|http|ftp|rtsp|mms){0,1}(:\/\/){0,1})www\.(([A-Za-z0-9-~]+)\.)+([A-Za-z0-9-~\/])+$/.test(n)
+    return /^((https|http|ftp|rtsp|mms){0,1}(:\/\/){0,1})www\.(([A-Za-z0-9-~]+)\.)+([A-Za-z0-9-~\\/])+$/.test(n)
 }
 export default {
     isMobile,

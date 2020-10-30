@@ -1,3 +1,4 @@
+/* eslint-disable */
 function coocaakeymap(buts, curlink, hover, getVal, setVal, keyDownEvent){
 
     this.linkbuttons = $(buts);

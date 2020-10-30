@@ -39,7 +39,8 @@ function deepClone (arg) {
     }
     var result = arg instanceof Array ? [] : {}
     for (const key in arg) {
-        if (arg.hasOwnProperty(key)) {
+        // arg.hasOwnProperty(key)
+        if (Object.prototype.hasOwnProperty.call(arg, key)) {
             if (typeof arg[key] === 'object') {
                 result[key] = deepClone(arg[key]) //递归复制
             } else {
