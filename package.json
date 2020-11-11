@@ -1,6 +1,6 @@
 {
   "name": "@ccprivate/utils",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "main": "dist/ccUtil.cjs.js",
   "module": "dist/ccUtil.es.js",
   "browser": "dist/ccUtil.umd.js",
