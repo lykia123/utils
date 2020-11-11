@@ -1,4 +1,10 @@
 // 数字千分位用逗号分隔
+/**
+ *
+ * @param number类型
+ * @description 将数字用逗号进行千分位分割
+ * @returns {用逗号分割千分位的数字}
+ */
 export function numberSplitWithComma (n) {
     // 如果不是字符或者数字，则直接返回
     if (typeof n !== 'string' && typeof n !== 'number') {
@@ -30,7 +36,7 @@ export function changeToOptions (data, name, id) {
     })
     return a
 }
-// 深度拷贝
+/*  */
 export function deepClone (arg) {
     if (arg instanceof RegExp) return new RegExp(arg)
     if (arg instanceof Date) return new Date(arg)
