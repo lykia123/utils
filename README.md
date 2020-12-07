@@ -46,16 +46,25 @@ npm run release
 npm install @ccprivate/utils --registry=http://172.20.155.102:4873
 ```
 
+### 文档构建
+```bash
+npm run docs:dev
+```
+### 文档打包
+```bash
+npm run docs:build
+```
+
 ## 使用
 ### 全局注册
 ```javascript
 // cjs模块
 // 1、先通过import引入
-import cUtils from '@ccprivate/utils/bundle'
+import cUtils from '@ccprivate/utils/dist/ccUtil.cjs'
 // 2、再在全局注册
 Vue.prototype.$cUtils = cUtils
 // 3、在vue单页面使用：比如说要使用千分位用逗号分隔的格式化方法，找到format下面对应的numberSplitWithComma方法
-this.$cUtils().format.numberSplitWithComma(number)
+this.$cUtils.format.numberSplitWithComma(number)
 ```
 ### 局部注册
 ```javascript
@@ -65,7 +74,7 @@ this.$cUtils().format.numberSplitWithComma(number)
 // 可以直接在单页面的data里面定义一个变量
 data () {
     return {
-        cUtils:require('@ccprivate/utils')
+        cUtils:require('@ccprivate/utils/dist/ccUtil.amd')
         }
     }
 // 2、使用方法：直接调用该方法
@@ -75,5 +84,3 @@ this.cUtils.validate.isMobile(number)
 
 ### Attribute
 所有的校验方法都在validate对象里，所有的格式化方法都在format对象里，pc键盘响应和TV遥控器响应在coocaaKeyMap里面
-
-
