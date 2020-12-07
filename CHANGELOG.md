@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.10](http://gitlab.skysri.com/FrontEnd/utils/compare/v0.0.9...v0.0.10) (2020-12-07)
+
+
+### Features
+
+* 去重功能优化、数字格式化、日期格式化优化以及数字格式化、号码校验等文档书写 ([354a09f](http://gitlab.skysri.com/FrontEnd/utils/commit/354a09f3a09506b56c7cac6b4a39dde7f9a57e32))
+* 去重功能优化、数字格式化、日期格式化优化以及数字格式化、号码校验等文档书写 ([a8b4cda](http://gitlab.skysri.com/FrontEnd/utils/commit/a8b4cda2c68ffdec29961eb3657246d3dd08ae69))
+
 ### [0.0.9](http://gitlab.skysri.com/FrontEnd/utils/compare/v0.0.8...v0.0.9) (2020-11-11)
 
 ### [0.0.8](http://gitlab.skysri.com/FrontEnd/utils/compare/v0.0.7...v0.0.8) (2020-10-30)
