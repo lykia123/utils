@@ -1,9 +1,7 @@
 import * as format from './format';
-import * as validate from './validate';
-import { default as coocaaKeyMap } from './coocaaKeyMap'
-export { format, validate, coocaaKeyMap }
+import * as validate from './validate'
+export { format, validate }
 export default {
     format,
-    validate,
-    coocaaKeyMap
+    validate
 }
