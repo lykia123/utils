@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.13](http://gitlab.skysri.com/FrontEnd/utils/compare/v0.0.12...v0.0.13) (2020-12-09)
+
+
+### Features
+
+* 去掉coocaamap，js和文档重新打包 ([3d9494b](http://gitlab.skysri.com/FrontEnd/utils/commit/3d9494bd803d4da306d9135cf145682e2556dc96))
+
+
+### Bug Fixes
+
+* 去掉coocaamap ([e052e53](http://gitlab.skysri.com/FrontEnd/utils/commit/e052e53025ee13d65514d4b85ada60c609ec7a1f))
+
 ### [0.0.12](http://gitlab.skysri.com/FrontEnd/utils/compare/v0.0.11...v0.0.12) (2020-12-09)
 
 
