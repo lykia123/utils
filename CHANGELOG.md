@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.12](http://gitlab.skysri.com/FrontEnd/utils/compare/v0.0.11...v0.0.12) (2020-12-09)
+
+
+### Features
+
+* 文档打包发布 ([e10c8f5](http://gitlab.skysri.com/FrontEnd/utils/commit/e10c8f59e68e6f5714ea1e8e2d7f83e330ba059b))
+* 日期格式化方法+数组去重方法文档测试及书写 ([6a70d0c](http://gitlab.skysri.com/FrontEnd/utils/commit/6a70d0c51840b852ef93ef12f6b5a7db1f5dbc40))
+* 校验文档编写 ([3d8d19b](http://gitlab.skysri.com/FrontEnd/utils/commit/3d8d19bb3c06e932fe7ee3ce4dc2bc8cb407ebb5))
+* 配置文件不忽略文档dist ([2b86cb5](http://gitlab.skysri.com/FrontEnd/utils/commit/2b86cb59139120d99354bdd2cf4bbf4e1b91662e))
+
+
+### Bug Fixes
+
+* git提交忽略文档 ([3c4eb37](http://gitlab.skysri.com/FrontEnd/utils/commit/3c4eb37a00f55cf1eec3948c63ec1b3fedb07a81))
+
 ### [0.0.11](http://gitlab.skysri.com/FrontEnd/utils/compare/v0.0.10...v0.0.11) (2020-12-08)
 
 ### [0.0.10](http://gitlab.skysri.com/FrontEnd/utils/compare/v0.0.9...v0.0.10) (2020-12-07)
