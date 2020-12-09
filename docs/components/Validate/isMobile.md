@@ -18,9 +18,10 @@ true/false
 ```bash
 this.$cUtils.validate.isMobile(18888888888)
 // => true
-isMobile('18888888888') === true
 this.$cUtils.validate.isMobile('18888888888')
 // => true
 this.$cUtils.validate.sMobile(11111)
+// => false
+this.$cUtils.validate.sMobile('0752-8888888')
 // => false
 ```

@@ -26,6 +26,6 @@ export function isDate (n) {
 export function isCardId (n) {
     return (/(^\d{15}$)|(^\d{17}(\d|X|x)$)/.test(n))
 }
-export function isUrl (n) {
-    return /^((https|http|ftp|rtsp|mms){0,1}(:\/\/){0,1})www\.(([A-Za-z0-9-~]+)\.)+([A-Za-z0-9-~\\/])+$/.test(n)
-}
+// export function isUrl (str) {
+//     return /^((https|http|ftp|rtsp|mms){0,1}(:\/\/){0,1})(www|(\w))\.(([A-Za-z0-9-~]+)\.)+([A-Za-z0-9-~\\/])+$/.test(str)
+// }
