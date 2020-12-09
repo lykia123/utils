@@ -44,25 +44,24 @@ export function fillNumber (num, len, fill) {
     }
     return result.join(fills)
 }
-// 格式化日期为 年-月-日 传入的参数为类似new Date()
-// /**
-//  *
-//  * @param date:日期,str: 格式化之后的字符串格式，如'yyyy-MM-dd hh:mm:ss'或'yyyy/MM/dd hh:mm'
-//  * @description 将日期转换为传入参数str的格式
-//  * @returns {yyyy-MM-dd hh:mm:ss等等}
-//  */
-// export function formatDate (date, str) {
-//     let concatStr = str.indexOf('/') > -1 ? '/' : '-'
-//     // 当d是1-11位数字，返回的都是1970年某月某日，当d是12-16，也会返回对应的日期，当大于16位，就是不合法的日期
-//     const time = new Date(date)
-//     let y = str.indexOf('yyyy') > -1 ? time.getFullYear() : ''// 年份
-//     let m = str.indexOf('MM') > -1 ? (time.getMonth() + 1).toString().padStart(2,'0') : ''// 月份
-//     let d = str.indexOf('dd') > -1 ? time.getDate().toString().padStart(2,'0') : ''// 日子
-//     let hh = str.indexOf('hh') > -1 ? (' '+time.getHours().toString().padEnd(2,'0')) : ''// 小时
-//     let mm = str.indexOf('mm') > -1 ? (':'+time.getMinutes().toString().padEnd(2,'0')) : ''// 分钟
-//     let ss = str.indexOf('ss') > -1 ? (':'+time.getSeconds().toString().padEnd(2,'0')) : ''// 秒数
-//     return `${y}`+concatStr+`${m}`+concatStr+`${d}`+`${hh}`+`${mm}`+`${ss}`
-// }
+/**
+ *
+ * @param date:日期,str: 格式化之后的字符串格式，如'yyyy-MM-dd hh:mm:ss'或'yyyy/MM/dd hh:mm'
+ * @description 将日期转换为传入参数str的格式
+ * @returns {yyyy-MM-dd hh:mm:ss等等}
+ */
+export function formatDateBy (date, str) {
+    let concatStr = str.indexOf('/') > -1 ? '/' : '-'
+    // 当d是1-11位数字，返回的都是1970年某月某日，当d是12-16，也会返回对应的日期，当大于16位，就是不合法的日期
+    const time = new Date(date)
+    let y = str.indexOf('yyyy') > -1 ? time.getFullYear() : ''// 年份
+    let m = str.indexOf('MM') > -1 ? (time.getMonth() + 1).toString().padStart(2,'0') : ''// 月份
+    let d = str.indexOf('dd') > -1 ? time.getDate().toString().padStart(2,'0') : ''// 日子
+    let hh = str.indexOf('hh') > -1 ? (' '+time.getHours().toString().padEnd(2,'0')) : ''// 小时
+    let mm = str.indexOf('mm') > -1 ? (':'+time.getMinutes().toString().padEnd(2,'0')) : ''// 分钟
+    let ss = str.indexOf('ss') > -1 ? (':'+time.getSeconds().toString().padEnd(2,'0')) : ''// 秒数
+    return `${y}`+concatStr+`${m}`+concatStr+`${d}`+`${hh}`+`${mm}`+`${ss}`
+}
 /**
  *
  * @param time:时间,如2020-01-01或者new Date(),默认为new Date()
@@ -135,6 +134,12 @@ export function deepClone (arg) {
     return result
 }
 //数组去重
+/**
+ *
+ * @param arr: 需要去重的数组
+ * @param filed: 如果数组里面有很多对象，要根据某一唯一字段(如id)去重数组数据
+ * @returns {*}
+ */
 export function uniq (arr, filed) {
     if(!isArr(arr)) {
         return arr

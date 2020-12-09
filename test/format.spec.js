@@ -1,5 +1,5 @@
 import assert from 'assert'
-import {formatDate, numberSplitWithComma, fillNumber, uniq} from "../src/format"
+import {formatDate, numberSplitWithComma, fillNumber, uniq, formatDateBy} from "../src/format"
 import {isMobile, isEmail, isPhone, isCardId} from "../src/validate"
 describe('src/validata', () => {
     it('测试 isMobile 方法', () => {
@@ -42,6 +42,8 @@ describe('src/format',()=> {
       assert(JSON.stringify(numberSplitWithComma([1,2,3])) == JSON.stringify([1,2,3]))
     })
     it('测试 formatDate方法', ()=> {
+      assert(formatDate(new Date(),'yyyy/MM/dd') === formatDateBy(new Date(),'yyyy/MM/dd'))
+      assert(formatDate(new Date(),'yyyy-MM-dd') === formatDateBy(new Date(),'yyyy-MM-dd'))
       assert(formatDate(new Date(),'yyyy/MM/dd') === '2020/12/09')
       assert(formatDate(new Date(),'yyyy-MM-dd') === '2020-12-09')
       assert(formatDate('2020/5/30','yyyy-MM-dd') === '2020-05-30')

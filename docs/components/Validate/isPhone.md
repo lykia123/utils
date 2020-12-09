@@ -9,10 +9,14 @@ this.$cUtils.validate.isPhone(number)
 0.0.1
 
 ### 参数
+```bash
 num: 整型数字/数字字符串
+```
 
 ### 返回
+```bash
 true/false
+```
 
 ### 例子
 ```bash

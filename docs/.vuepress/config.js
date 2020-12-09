@@ -21,6 +21,8 @@ module.exports = {
                         children: [
                             'components/Format/NumberSplitWithComma.md',
                             'components/Format/fillNumber.md',
+                            'components/Format/formatDate.md',
+                            'components/Format/uniq.md',
                         ]
                     },
                     {

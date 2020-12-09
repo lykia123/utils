@@ -9,10 +9,14 @@ this.$cUtils.format.numberSplitWithComma(number)
 0.0.1
 
 ### 参数
+```bash
 number: 整型数字
+```
 
 ### 返回
+```bash
 逗号分割千分位的字符串
+```
 
 ### 例子
 ```bash

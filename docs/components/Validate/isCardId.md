@@ -9,10 +9,14 @@ this.$cUtils.validate.isCardId(number)
 0.0.1
 
 ### 参数
+```bash
 num: 15位数字/18位数字/17为数字+(X/x)
+```
 
 ### 返回
+```bash
 true/false
+```
 
 ### 例子
 ```bash

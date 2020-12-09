@@ -9,12 +9,16 @@ this.$cUtils.format.fillNumber(number,len,fill)
 0.0.1
 
 ### 参数
+```bash
 num: 整型数字(例如：1234567)
 len: 整型数字,分割长度,默认为3
 fill: 分割填充符，默认为","
+```
 
 ### 返回
+```bash
 任意长度分割填充的字符串，如'1,234,567'
+```
 
 ### 例子
 ```bash

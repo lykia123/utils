@@ -83,4 +83,7 @@ this.cUtils.validate.isMobile(number)
 ```
 
 ### Attribute
-所有的校验方法都在validate对象里，所有的格式化方法都在format对象里，pc键盘响应和TV遥控器响应在coocaaKeyMap里面
+所有的校验方法都在validate对象里，所有的格式化方法都在format对象里
+
+### 组件文档
+请查看 [组件文档](http://172.20.155.102/utils/)
