@@ -44,8 +44,6 @@ describe('src/format',()=> {
     it('测试 formatDate方法', ()=> {
       assert(formatDate(new Date(),'yyyy/MM/dd') === formatDateBy(new Date(),'yyyy/MM/dd'))
       assert(formatDate(new Date(),'yyyy-MM-dd') === formatDateBy(new Date(),'yyyy-MM-dd'))
-      assert(formatDate(new Date(),'yyyy/MM/dd') === '2020/12/09')
-      assert(formatDate(new Date(),'yyyy-MM-dd') === '2020-12-09')
       assert(formatDate('2020/5/30','yyyy-MM-dd') === '2020-05-30')
       assert(formatDate('2020/05/02','yyyy-MM-dd') === '2020-05-02')
     })
