@@ -23,7 +23,7 @@ true/false
 this.$cUtils.validate.isEmail('635263@qq.com')
 // => true
 this.$cUtils.validate.isEmail('027-2121222')
-// => true
+// => false
 this.$cUtils.validate.isEmail('635263@foxmail.com')
 // => true
 this.$cUtils.validate.isEmail('12334')
