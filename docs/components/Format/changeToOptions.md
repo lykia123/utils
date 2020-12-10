@@ -6,7 +6,7 @@ this.$cUtils.format.changeToOptions(arr, name, id)
 ```
 
 ### 添加版本
-0.0.1
+1.0.0
 
 ### 参数
 ```bash

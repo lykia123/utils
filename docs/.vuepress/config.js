@@ -20,7 +20,6 @@ module.exports = {
                         title: '格式化方法',
                         collapsable: false,
                         children: [
-                            'components/Format/NumberSplitWithComma.md',
                             'components/Format/fillNumber.md',
                             'components/Format/formatDate.md',
                             'components/Format/uniq.md',
