@@ -15,9 +15,10 @@ module.exports = {
             '/': {
                 lang: 'zh-CN', //将会被设置为<html>的lang属性
                 sidebar: [
+                    '/',
                     {
                         title: '格式化方法',
-                        collapsed: true,
+                        collapsable: false,
                         children: [
                             'components/Format/NumberSplitWithComma.md',
                             'components/Format/fillNumber.md',
@@ -28,7 +29,7 @@ module.exports = {
                     },
                     {
                         title: '校验方法',
-                        collapsed: true,
+                        collapsable: false,
                         children: [
                             'components/Validate/isMobile.md',
                             'components/Validate/isEmail.md',

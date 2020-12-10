@@ -1,4 +1,4 @@
-## 数组格式化成下拉框label/value格式
+### 数组格式化成下拉框label/value格式
 
 ### 使用
 ```bash
