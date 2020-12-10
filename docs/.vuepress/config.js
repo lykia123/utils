@@ -23,6 +23,7 @@ module.exports = {
                             'components/Format/fillNumber.md',
                             'components/Format/formatDate.md',
                             'components/Format/uniq.md',
+                            'components/Format/changeToOptions.md',
                         ]
                     },
                     {
