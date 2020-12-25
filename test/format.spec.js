@@ -1,6 +1,6 @@
 import assert from 'assert'
 import {formatDate, numberSplitWithComma, fillNumber, uniq, formatDateBy, changeToOptions} from "../src/format"
-import {isMobile, isEmail, isPhone, isCardId} from "../src/validate"
+import {isMobile, isEmail, isPhone, isCardId, isNumRange} from "../src/validate"
 describe('src/validata', () => {
     it('测试 isMobile 方法', () => {
         assert(isMobile !== undefined)
@@ -26,6 +26,14 @@ describe('src/validata', () => {
         assert(isCardId(421122199001012222) === true)
         assert(isCardId(421122199001012) === true)
         assert(isCardId('42112219900101222x') === true)
+    })
+    it('测试 isNumRange 校验方法', () => {
+        assert(isNumRange(15,5,20) === true)
+        assert(isNumRange(15,5,20) === true)
+        assert(isNumRange(5,10,20) === false)
+        assert(isNumRange(5,20,20) === false)
+        assert(isNumRange('2') === false)
+        assert(isNumRange(5,'2',20) === false)
     })
     // it('测试 isUrl 网址校验方法', () => {
     //     assert(isUrl('http://182.20.20.20:8080') === false)

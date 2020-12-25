@@ -26,6 +26,25 @@ export function isDate (n) {
 export function isCardId (n) {
     return (/(^\d{15}$)|(^\d{17}(\d|X|x)$)/.test(n))
 }
+export function isNumRange (num, min, max) {
+    if (isNumber(num)) {
+        if (isNumber(min) && isNumber(max)) {
+            if (min < max) {
+                if ( num >= min && num <= max ) {
+                    return true
+                } else {
+                    return false
+                }
+            } else {
+                return false
+            }
+        } else {
+            return false
+        }
+    } else {
+        return false
+    }
+}
 // export function isUrl (str) {
 //     return /^((https|http|ftp|rtsp|mms){0,1}(:\/\/){0,1})(www|(\w))\.(([A-Za-z0-9-~]+)\.)+([A-Za-z0-9-~\\/])+$/.test(str)
 // }
