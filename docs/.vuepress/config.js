@@ -33,7 +33,8 @@ module.exports = {
                             'components/Validate/isMobile.md',
                             'components/Validate/isEmail.md',
                             'components/Validate/isPhone.md',
-                            'components/Validate/isCardId.md'
+                            'components/Validate/isCardId.md',
+                            'components/Validate/isNumRange.md'
                         ]
                     }
                 ]

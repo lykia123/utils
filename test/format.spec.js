@@ -29,7 +29,6 @@ describe('src/validata', () => {
     })
     it('测试 isNumRange 校验方法', () => {
         assert(isNumRange(15,5,20) === true)
-        assert(isNumRange(15,5,20) === true)
         assert(isNumRange(5,10,20) === false)
         assert(isNumRange(5,20,20) === false)
         assert(isNumRange('2') === false)
