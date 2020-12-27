@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.16](http://gitlab.skysri.com/FrontEnd/utils/compare/v0.0.15...v0.0.16) (2020-12-27)
+
+
+### Features
+
+* 数字取件验证 ([5fa914a](http://gitlab.skysri.com/FrontEnd/utils/commit/5fa914a3fb1668e9cc17286f29565f7ccfd764a8))
+
 ### [0.0.15](http://gitlab.skysri.com/FrontEnd/utils/compare/v0.0.14...v0.0.15) (2020-12-10)
 
 ### [0.0.14](http://gitlab.skysri.com/FrontEnd/utils/compare/v0.0.13...v0.0.14) (2020-12-10)
