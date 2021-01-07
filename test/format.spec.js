@@ -1,5 +1,13 @@
 import assert from 'assert'
-import {formatDate, numberSplitWithComma, fillNumber, uniq, formatDateBy, changeToOptions} from "../src/format"
+import {
+    formatDate,
+    numberSplitWithComma,
+    fillNumber,
+    uniq,
+    formatDateBy,
+    changeToOptions,
+    dateDiff
+} from "../src/format"
 import {isMobile, isEmail, isPhone, isCardId, isNumRange} from "../src/validate"
 describe('src/validata', () => {
     it('测试 isMobile 方法', () => {
@@ -66,5 +74,8 @@ describe('src/format',()=> {
     })
     it('测试 changeToOptions方法', ()=> {
         assert((changeToOptions([{id: 1,name: '影视'},{id: 2,name: '教育'},{id: 3,name: '体育'}],'name','id')).toString() === ([{label: '影视',value: 1},{label: '教育',value: 2},{label: '体育',value: 3}]).toString())
+    })
+    it('测试 最近更新时间时差显示', ()=> {
+        assert(dateDiff('2016-07-18') === '4年前')
     })
 })
