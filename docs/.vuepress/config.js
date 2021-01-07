@@ -24,6 +24,7 @@ module.exports = {
                             'components/Format/formatDate.md',
                             'components/Format/uniq.md',
                             'components/Format/changeToOptions.md',
+                            'components/Format/dateDiff.md',
                         ]
                     },
                     {
