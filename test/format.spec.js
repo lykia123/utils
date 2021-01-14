@@ -31,9 +31,9 @@ describe('src/validata', () => {
         assert(isPhone('18888888888') === false)
     })
     it('测试 isCardId 身份证号码校验方法', () => {
-        assert(isCardId(421122199001012222) === true)
-        assert(isCardId(421122199001012) === true)
-        assert(isCardId('42112219900101222x') === true)
+        assert(isCardId('421122199001012222') === false)
+        assert(isCardId('421127199312302869') === false)
+        assert(isCardId('421127199301062869') === true)
     })
     it('测试 isNumRange 校验方法', () => {
         assert(isNumRange(15,5,20) === true)
