@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.18](http://gitlab.skysri.com/FrontEnd/utils/compare/v0.0.17...v0.0.18) (2021-01-14)
+
+
+### Features
+
+* 身份证校验 ([ec08956](http://gitlab.skysri.com/FrontEnd/utils/commit/ec08956010f44b91b50f8952137abbf77b879b94))
+* 身份证校验测试用例修改C ([d6ab67b](http://gitlab.skysri.com/FrontEnd/utils/commit/d6ab67beb638f513f5e7287c530eada8ff871984))
+
 ### [0.0.17](http://gitlab.skysri.com/FrontEnd/utils/compare/v0.0.16...v0.0.17) (2021-01-07)
 
 
