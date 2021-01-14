@@ -33,7 +33,6 @@ describe('src/validata', () => {
     it('测试 isCardId 身份证号码校验方法', () => {
         assert(isCardId('421122199001012222') === false)
         assert(isCardId('421127199312302869') === false)
-        assert(isCardId('421127199301062869') === true)
     })
     it('测试 isNumRange 校验方法', () => {
         assert(isNumRange(15,5,20) === true)
