@@ -39,6 +39,9 @@ export function fillNumber (num, len, fill) {
     const fills = fill || ','
     while (num !== 0) {
         nums = num % Math.pow(10, lens)
+        if (nums === 0) {
+            nums = Math.pow(10, lens).toString().substring(1, lens + 1)
+        }
         num = Math.floor(num / Math.pow(10, lens))
         result.unshift(nums)
     }
