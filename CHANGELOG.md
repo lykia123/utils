@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.19](http://gitlab.skysri.com/FrontEnd/utils/compare/v0.0.18...v0.0.19) (2021-01-28)
+
+
+### Bug Fixes
+
+* build ([8f71cce](http://gitlab.skysri.com/FrontEnd/utils/commit/8f71cce3307add73d35a0ae076543aab7bcbdce5))
+* 数字填充间隔位都是0的时候只显示一个0 ([ba0987e](http://gitlab.skysri.com/FrontEnd/utils/commit/ba0987e65bad61e79faee693e9f6f0441f0961b1))
+
 ### [0.0.18](http://gitlab.skysri.com/FrontEnd/utils/compare/v0.0.17...v0.0.18) (2021-01-14)
 
 
