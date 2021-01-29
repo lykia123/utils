@@ -133,6 +133,22 @@ export function isNumRange (num, min, max) {
     }
     return false
 }
+export function isJSON (str) {
+    if (typeof str === 'string') {
+        try {
+            var obj = JSON.parse(str)
+            if (typeof obj === 'object' && obj) {
+                return true
+            } else {
+                return false
+            }
+        } catch (e) {
+            console.log('error：' + str + '!!!' + e)
+            return false
+        }
+    }
+    console.log('It is not a string!')
+}
 // export function isUrl (str) {
 //     return /^((https|http|ftp|rtsp|mms){0,1}(:\/\/){0,1})(www|(\w))\.(([A-Za-z0-9-~]+)\.)+([A-Za-z0-9-~\\/])+$/.test(str)
 // }

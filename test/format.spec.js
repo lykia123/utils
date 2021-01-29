@@ -8,7 +8,7 @@ import {
     changeToOptions,
     dateDiff
 } from "../src/format"
-import {isMobile, isEmail, isPhone, isCardId, isNumRange} from "../src/validate"
+import {isMobile, isEmail, isPhone, isCardId, isNumRange, isJSON} from "../src/validate"
 describe('src/validata', () => {
     it('测试 isMobile 方法', () => {
         assert(isMobile !== undefined)
@@ -40,6 +40,10 @@ describe('src/validata', () => {
         assert(isNumRange(5,20,20) === false)
         assert(isNumRange('2') === false)
         assert(isNumRange(5,'2',20) === false)
+    })
+    it('测试 isJson json格式校验方法', () => {
+        assert(isJSON('{"a": "123"}') === true)
+        assert(isJSON('{"a": "123"}') === true)
     })
     // it('测试 isUrl 网址校验方法', () => {
     //     assert(isUrl('http://182.20.20.20:8080') === false)
